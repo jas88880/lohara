@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact - My Website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Response</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+            border-radius: 5px;
+        }
+        @media (max-width: 600px) {
+            iframe {
+                height: 1000px; /* increase height for smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="gallery.html">Gallery</a>
-  </nav>
 
-  <h1>Contact Me</h1>
+<h1>Fill Out Our Form</h1>
 
- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScwcfDLE_HouDSC4JzAPH_c4EfCtkrOU9B4b5GirRaKQruFPA/viewform?embedded=true" width="640" height="643" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    <label>Name:</label><br>
-    <input type="text" name="name" required><br><br>
+<div class="form-container">
+    <iframe 
+src="https://docs.google.com/forms/d/e/1FAIpQLScwcfDLE_HouDSC4JzAPH_c4EfCtkrOU9B4b5GirRaKQruFPA/viewform?embedded=true" width="640" height="643" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
 
-    <label>Email:</label><br>
-    <input type="email" name="email" required><br><br>
+<p>Thank you for taking the time to submit your responses!</p>
 
-    <label>Message:</label><br>
-    <textarea name="message" required></textarea><br><br>
-
-    <button type="submit">Send</button>
-  </form>
 </body>
 </html>
->
